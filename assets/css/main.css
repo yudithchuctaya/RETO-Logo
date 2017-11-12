@@ -1,0 +1,73 @@
+body{
+background: #000;
+padding: -top:60px;
+}
+svg{
+  width: 100%;
+  height: 100vh;
+  display: block;
+  margin-left: 30%;
+}
+
+/*========================
+   Keyframes
+ =========================*/
+@keyframes line{
+	100%{
+		stroke-dashoffset:0;
+	}
+}
+@keyframes line-fill{
+	100%{
+		fill:#BF7077;
+	}
+}
+ /*========================
+ svg Styles
+ =========================*/
+
+svg{
+	display: block;
+	margin: 2em auto 0;
+	width: 40%;
+}
+
+.logo{
+	stroke: #fff;
+	stroke-width:3;
+	stroke-dasharray: 900;
+	stroke-dashoffset:810;
+	animation:line 3s linear forwards, line-fill .2s 3s forwards
+}
+
+/*________________________*/
+/*========================
+   Keyframes
+ =========================*/
+@keyframes content{
+	100%{
+		stroke-dashoffset:0;
+	}
+}
+@keyframes content-fill{
+	100%{
+		fill:#fff;
+	}
+}
+ /*========================
+ svg Styles
+ =========================*/
+
+svg{
+	display: block;
+	margin: 2em auto 0;
+	width: 40%;
+}
+
+.contenido{
+	stroke: #fff;
+	stroke-width:3;
+	stroke-dasharray: 900;
+	stroke-dashoffset:810;
+	animation: content 3s linear forwards, content-fill .2s 1s forwards
+}
